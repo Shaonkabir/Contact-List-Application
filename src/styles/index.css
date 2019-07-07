@@ -1,0 +1,65 @@
+html, body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+.contact-header h3 {
+	font-weight: 700;
+	letter-spacing: 4px;
+	font-style: italic;
+}
+.nightMood {
+	background: #0f4e2f;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	padding: 7px 20px;
+	border-radius: 7px;
+	cursor: pointer;
+	margin: 0;
+	letter-spacing: 3px;
+}
+.nightMood:hover {
+	text-decoration: none;
+	color: yellow;
+}
+.nightMoodActive {
+    background-color: #000;
+    color:#fff;
+}
+
+.activation-text {
+	font-size: 22px;
+}
+
+/* Bootstrap Class Customization for Table Header  */
+
+.table .thead-dark th {
+	color: #fff;
+	background-color: #838587;
+	letter-spacing: 5px;
+	font-weight: normal;
+	font-style: italic;
+	font-variant: small-caps;
+	box-shadow: 0 11px 14px dimgray;
+}
+
+.pb-5, .py-5 {
+	 padding-bottom: 0 !important; 
+}
+p {
+	margin-top: 6px;
+	margin-bottom: 1rem;
+}
+td:hover {
+	color: green;
+	cursor: alias;
+	padding-left: 20px;
+	transition: all .2s linear;
+}
+td:hover:last-child {
+	cursor: pointer;
+	padding-left: .75rem;
+}

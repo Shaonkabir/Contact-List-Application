@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact List Application | Ajax</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body class="default">
+
+    <!-- DOM Manipulation with Ajax -->
+
+    <div class="contact-application text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="contact-header py-2">
+                        <h3>Contact List Application</h3>
+                        <p class="date"></p>
+                        <div class="alert alert-success ">
+                            <div class="row text-center parentRow">
+                                <div class="col-md-6 offset-md-3">
+                                    <p class="activation-text">Click the button to active Night Mood ==&gt;</p>
+                                </div>
+                                <div class="col-md-3 text-right">
+                                    <a href="#" class="nightMood">Night Mood</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-app">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <input type="text" placeholder="Enter Name" class="form-control nameField">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="tel" placeholder="Enter Phone" class="form-control phoneField">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="email" placeholder="Enter Email" class="form-control emailField">
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-success">Add Contacts</button>
+                            </div>
+                        </div>
+                        <div class="row pt-5">
+                            <div class="col-md-9">
+                                <input type="text" placeholder="Search Contact" class="form-control searchField">
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-info">Search</button>
+                            </div>
+                        </div>
+                        <div class="row text-left py-5">
+                            <div class="col-md-12">
+                                <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <!-- Data will be came from server -->
+                                    </tbody>
+                                </table> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Axios Library CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- jQuery,Bootstrap and our main Scrips -->
+    <script src="./scripts/jquery-3.3.1.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
